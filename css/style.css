@@ -1,0 +1,48 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+form,
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+img {
+	border: 0;
+}
+
+@keyframes  eye {
+	from {background-color: #8b0000; filter: brightness(1);}
+	to {background-color: #b70101; filter: brightness(1.2);}
+}
+
+.terminator {
+	background-repeat: no-repeat;
+	position: relative;
+	margin: 0 auto;
+	width: 300px;
+	height: 400px;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.terminator:hover .red_eye {
+	visibility: visible;
+}
+
+.red_eye {
+	position: absolute;
+	width: 4px;
+	height: 4px;
+	border-radius: 50%;
+	top: 213px;
+	right: 110px;
+	animation: eye 1s infinite linear alternate;
+	visibility: hidden;
+
+}
+
